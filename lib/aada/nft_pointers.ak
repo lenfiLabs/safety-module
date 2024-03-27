@@ -38,8 +38,8 @@ pub fn nft_validator(
   when
     reference_inputs
       |> list.find(
-           fn(inp) { quantity_of(inp.output.value, nft_policy, nft_name) == 1 },
-         )
+          fn(inp) { quantity_of(inp.output.value, nft_policy, nft_name) == 1 },
+        )
   is {
     Some(Input {
       output: Output { address: Address { payment_credential, .. }, .. },

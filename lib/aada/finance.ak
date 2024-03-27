@@ -24,7 +24,6 @@ pub fn get_expected_deposit_amount(
     |> rational.new(total_lp_tokens)
 }
 
-
 pub fn token_b_received_from_seling_token_a(
   sell_amount: Rational,
   token_a_amount: Int,

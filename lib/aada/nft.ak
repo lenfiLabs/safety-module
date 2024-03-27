@@ -5,7 +5,6 @@ use aiken/list
 use aiken/transaction.{Input, OutputReference}
 use aiken/transaction/value.{MintedValue}
 
-
 pub type NFTAction {
   // Consumed oref, Index of produced output
   MintNFT(OutputReference, Int)
@@ -38,7 +37,6 @@ pub type CollateralNFTRedeemerLists {
 pub fn id_from_utxo(consumed_utxo: OutputReference) -> ByteArray {
   hash.blake2b_256(builtin.serialise_data(consumed_utxo))
 }
-
 
 pub fn check_uniqueness(
   nft_action: NFTAction,

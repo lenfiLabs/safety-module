@@ -294,8 +294,6 @@ test asset_gain_ada_sale_test() {
   finance.retired_asset_gain_adasale(sell_amount, lenfi_in_pool, ada_in_pool) == 7232658426
 }
 
-
-
 test asset_gain_function_matching_test() {
   let sell_amount = 1000000000
   // Buying this amount of ADA

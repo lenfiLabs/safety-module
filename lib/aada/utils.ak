@@ -40,12 +40,12 @@ pub fn get_ref_token_datum(
     },
   )
     |> option.and_then(
-         fn(input) {
-           expect InlineDatum(datum) = input.output.datum
-           expect datum_typed: ReferenceTokenDatum = datum
-           Some(datum_typed)
-         },
-       )
+        fn(input) {
+          expect InlineDatum(datum) = input.output.datum
+          expect datum_typed: ReferenceTokenDatum = datum
+          Some(datum_typed)
+        },
+      )
 }
 
 /// Checks that an NFT, and only that NFT, was minted from policy.
